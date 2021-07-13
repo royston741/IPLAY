@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            background-color: rgb(15, 13, 48);
+            color: white;
+            font-family: "Roboto", sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        th p {
+            background-color: #1f80e0;
+            padding: 0 10px 0 10px;
+            border-radius: 4px;
+        }
+
+        td,
+        th {
+            padding: 30px 40px 10px 0;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        .blur {
+            color: gray;
+        }
+
+        .active {
+            background-color: rgb(47, 47, 73);
+        }
+
+        .Select p {
+            cursor: pointer;
+            margin: 20px;
+            padding: 10px;
+            border-radius: 4px;
+            background-color: goldenrod;
+            border: none;
+        }
+
+        @media screen and (max-width:610px) {
+
+            .Select p {
+                margin: 5px;
+                padding: 4px;
+            }
+
+            td,
+            th {
+                padding: 30px 15px 10px 0;
+            }
+
+        }
+
+        @media screen and (max-width:500px) {
+
+            td,
+            th {
+                padding: 30px 10px 10px 0;
+            }
+
+        }
+
+        @media screen and (max-width:500px) {
+
+            .Select p {
+                margin: 0px;
+                padding: 2px;
+            }
+
+            td,
+            th {
+                padding: 30px 0px 10px 0;
+            }
+
+        }
+
+        @media screen and (max-width:315px) {
+
+            th p{
+                padding: 0 3px 0 3px;
+            }
+}
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <th class="th">
+                <p> Package
+                </p>
+            </th>
+            <th class="th">
+                <p> Phone
+                </p>
+            </th>
+            <th class="th">
+                <p> Laptop
+                </p>
+            </th>
+            <th class="th">
+                <p> Tv
+                </p>
+            </th>
+            <th class="th">
+                <p> Select
+                </p>
+            </th>
+        </tr>
+        <tr>
+            <td>200Rs/-</td>
+            <td> &#x2713;</td>
+            <td>&#x2715;</td>
+            <td>&#x2715;</td>
+            <td class="blur">Select</td>
+        </tr>
+        <tr>
+            <td>300Rs/-</td>
+            <td> &#x2713;</td>
+            <td> &#x2713;</td>
+            <td>&#x2715;</td>
+            <td class="blur">Select</td>
+        </tr>
+        <tr>
+            <td class="active">
+                400Rs/-
+            </td>
+            <td class="active"> &#x2713;</td>
+            <td class="active"> &#x2713;</td>
+            <td class="active"> &#x2713;</td>
+            <td class="blur Select">
+                <p>
+                    Selected
+                </p>
+            </td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
