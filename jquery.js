@@ -17,7 +17,7 @@ $(document).ready(function () {
 $(".log-in").on("click", function () {
   let user_name = $(".user-name").val();
   let user_password = $(".password").val();
-  if (user_name == "Shrutik" && user_password == "shrutik") {
+  if (user_name == "Royston" && user_password == "royston") {
     $(".log-in").css('display','none');
     $(".log-in").css("background-color", "green");
     $(".sign_up_container h5").css("display", "none");
